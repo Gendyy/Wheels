@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <title>jQuery Selectors</title>
+        <script src="jquery-3.1.1.min.js"></script>
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+        <style>
+            .red{
+                color:red;
+            }
+            .green{
+                color:green;
+            }
+            .blue{
+                color:blue;
+            }
+        </style>
+    </head>
+    
+<!--
+    <body>
+        <h1 id="firstHeader" class="red">Header 1</h1>
+        <h2 class="red">Header 2</h2>
+        <h3 class="green">Header 3</h3>
+        <p  class="blue">Paragraph 1</p>
+        <p id="secondParagraph"  class="green">Paragraph 2</p>
+        <p  class="red">Paragraph 3</p>
+        <h1 class="blue">Header 1</h1>
+        <h2 class="red">Header 2</h2>
+        <h3 class="green">Header 3</h3>
+        <p  class="blue">Paragraph 1</p>
+        <p  class="green">Paragraph 2</p>
+        <p  class="red">Paragraph 3s</p>
+        
+        <script>
+//            $("*").css("color" , "blue");
+//            $(".x")//Select all elements with class x
+ //           $("#x") //Select the element with ID x
+//            $("x") //Select all elements with tag name x
+            $(".green").css("backgroundColor","yellow");
+            $("#secondParagraph").css("border","4px dotted gold");
+            $("p").css("borderLeft","6px gray solid");
+            $("p").css("padding","10px");
+            $("p").css("marginLeft","20px");
+        </script>
+    </body>
+-->
+<!------------------------------------------->
+<!--
+    <body>
+        <h1 id="firstHeader" class="red">Header 1</h1>
+        <h2 class="red">Header 2</h2>
+        <h3 class="green">Header 3</h3>
+        <p  class="blue">Paragraph 1</p>
+        <p id="secondParagraph"  class="green">Paragraph 2</p>
+        <p  class="red">Paragraph 3</p>
+        <h1 class="blue">Header 1</h1>
+        <h2 class="red">Header 2</h2>
+        <h3 class="green">Header 3</h3>
+        <p  class="blue">Paragraph 1</p>
+        <p  class="green">Paragraph 2</p>
+        <p  class="red">Paragraph 3s</p>
+        
+        <script>
+            
+            $(document).ready(function(){
+                $(".green").css("backgroundColor","yellow");
+                $("#secondParagraph").css("border","4px dotted gold");
+                $("p").css("borderLeft","6px gray solid");
+                $("p").css("padding","10px");
+                $("p").css("marginLeft","20px");
+            });
+        </script>
+    </body>
+-->
+<!------------------------------------->
+
+
+   <body>
+        <h1 id="firstHeader" class="red">Header 1</h1>
+        <h2 class="red">Header 2</h2>
+        <h3 class="green">Header 3</h3>
+        <p  class="blue">Paragraph 1</p>
+        <p id="secondParagraph"  class="green">Paragraph 2</p>
+        <p  class="red">Paragraph 3</p>
+        <h1 class="blue">Header 1</h1>
+        <h2 class="red">Header 2</h2>
+        <h3 class="green">Header 3</h3>
+        <p  class="blue">Paragraph 1</p>
+        <p  class="green">Paragraph 2</p>
+        <p  class="red">Paragraph 3s</p>
+        
+        <script>
+            $(document).ready(function(){
+                $(".green").css("backgroundColor","yellow");
+                $("#secondParagraph").css("border","4px dotted gold");
+                $("p").css({
+                    borderLeft: "6px gray solid",
+                    padding: "10px",
+                    marginLeft:"20px"
+                });
+            });
+        </script>
+    </body>
+
+<!-------------------------------------->
+<!--
+    <body>
+        <p><a href="http://www.w3schools.com/jquery/trysel.asp">More Selectors</a></p>
+    </body>
+-->
+</html>

@@ -1,0 +1,90 @@
+<!--
+
+<!doctype html>
+<html>
+    <head>
+        <title>jQuery Effects (show and hide)</title>
+        <script src="jquery-3.1.1.min.js"></script>
+        
+        <style>
+            
+        </style>
+    </head>
+    
+    <body>
+       <p>If you click on the "Hide" button, I will disappear.</p>
+
+        <button id="hide">Hide</button>
+        
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide();
+                });
+            });
+        </script>
+    </body>
+</html>
+
+-->
+
+
+
+
+<!--
+<!doctype html>
+<html>
+    <head>
+        <title>jQuery Effects (show and hide)</title>
+        <script src="jquery-3.1.1.min.js"></script>
+        
+        <style>
+            
+        </style>
+    </head>
+    
+    <body>
+       <p>If you click on the "Hide" button, I will disappear.</p>
+
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide();
+                });
+                $("#show").click(function(){
+                    $("p").show();
+                });
+            });
+        </script>
+    </body>
+</html>
+-->
+
+<!doctype html>
+<html>
+    <head>
+        <title>jQuery Effects (show and hide)</title>
+        <script src="jquery-3.1.1.min.js"></script>
+        
+        <style>
+            
+        </style>
+    </head>
+    
+    <body>
+       <p>If you click on the "Hide" button, I will disappear.</p>
+
+        <button id="hide">Show/Hide</button>
+       
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").toggle();
+                });
+            });
+        </script>
+    </body>
+</html>

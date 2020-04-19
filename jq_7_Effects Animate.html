@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Effects Animate</title>
+
+        <script src="jquery-3.1.1.min.js"></script>
+
+        <style> 
+            #panel, #toggle {
+                padding: 5px;
+                text-align: center;
+                background-color: #e5ee53;
+                border: solid 1px #454744;
+            }
+            #toggle{
+                cursor: pointer;
+            }
+
+        #panel {
+            padding: 150px;
+            position: absolute;
+        }
+        </style>
+    </head>
+    
+    <body>
+
+        <div id="toggle">Click me</div>
+        <div id="panel">Hello everybody!</div>
+
+        <script> 
+            
+                $("#toggle").click(function(){
+                    $("#panel").animate( {
+                        left:"500px"
+                                         } , 3000);
+                });
+        </script>
+    </body>
+</html>

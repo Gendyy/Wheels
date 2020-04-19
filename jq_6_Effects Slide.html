@@ -1,0 +1,86 @@
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Effects Slide</title>
+        <script src="jquery-3.1.1.min.js"></script>
+
+        <style> 
+            #panel, #open, #close {
+                padding: 5px;
+                text-align: center;
+                background-color: #e5eecc;
+                border: solid 1px #c3c3c3;
+            }
+
+            #panel {
+                padding: 50px;
+                display: none;
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <div id="open">Click me to open</div>
+        <div id="panel">
+            <span id="close">
+                x  
+            </span>
+            Hello everybody!
+        </div>
+
+        <script> 
+            $(document).ready(function(){
+                $("#open").click(function(){
+                    $("#panel").slideDown("slow");
+                });
+                $("#close").click(function(){
+                    $("#panel").slideUp("slow");
+                });
+            });
+        </script>
+    </body>
+</html>
+-->
+<!--////////////////////////////////////////////////////////////////-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Effects Slide</title>
+
+        <script src="jquery-3.1.1.min.js"></script>
+
+        <style> 
+            #panel, #toggle {
+                padding: 5px;
+                text-align: center;
+                background-color: #e5ee35;
+                border: solid 1px #454445;
+            }
+            #toggle{
+                cursor: pointer;
+            }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+        </style>
+    </head>
+    
+    <body>
+
+        <div id="toggle">Click me</div>
+        <div id="panel">Hello everybody!</div>
+
+        <script> 
+            $(document).ready(function(){
+                $("#toggle").click(function(){
+                    $("#panel").slideToggle(3000);
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+    <!doctype html>
+<html>
+    <head>
+        <title>jQuery Event Methods</title>
+        <script src="jquery-3.1.1.min.js"></script>
+        
+        <style>
+            
+        </style>
+    </head>
+    
+<!--
+    <body>
+        <h1 id="firstHeader" class="red">Header 1</h1>
+        <h2 class="red">Header 2</h2>
+        <h3 class="green">Header 3</h3>
+        <p  class="blue">Paragraph 1</p>
+        <p id="secondParagraph"  class="green">Paragraph 2</p>
+        <p  class="red">Paragraph 3</p>
+        <h1 class="blue">Header 1</h1>
+        <h2 class="red">Header 2</h2>
+        <h3 class="green">Header 3</h3>
+        <p  class="blue">Paragraph 1</p>
+        <p  class="green">Paragraph 2</p>
+        <p  class="red">Paragraph 3s</p>
+       
+        <script>
+            $("p").click(function(){
+                $(this).hide();
+            });
+        </script>
+    </body>
+-->
+    
+<!---------------------------------------------------->
+<!--
+    
+    <body>
+        First Name:   <input /> <br /><br />
+        Middle Name:  <input /> <br /><br />
+        Last Name:    <input /> <br /><br />
+        
+        <script>
+            $("input").focus(function(){
+                $(this).css("background-color", "lightgray");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color", "white");
+            });
+        </script>
+    </body>
+-->
+<!--
+    <body>
+        First Name:   <input /> <br /><br />
+        Middle Name:  <input /> <br /><br />
+        Last Name:    <input /> <br /><br />
+        
+        <script>
+            $("input").focus(function(){
+                $(this).css("background-color", "lightgray");
+            })
+                .blur(function(){
+                $(this).css("background-color", "white");
+            }); //Chaining
+        </script>
+    </body>
+-->
+<!------------------------------------------>
+
+ <body>
+        Your notes: <input id="notes" /> <span id="length"></span>
+        <script>
+            i = 0;
+            $(document).ready(function(){
+                $("#notes").keypress(function(X){
+                    i ++;
+                    if(i <= 5){
+                        $("#length").html(i); //document.getElementById("length").innerHTML = i;
+                    }else{
+					X.preventDefault();
+                        //$("#length").text("You have reached the maximum number of characters allowed!!!");
+                    }
+                });
+            });
+        </script>
+    </body>
+
+<!--------------------------------------------------->
+    
+</html>
